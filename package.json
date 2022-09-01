@@ -4,10 +4,10 @@
   "description": "",
   "main": "dist/app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node dist/app.js",
     "postinstall": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "compile": "tsc -w -diagnostics",
-    "start": "node ./dist/app.js",
     "lint": "eslint . --ext .ts,.js",
     "format": "npx prettier 'src/**/*.ts' --write",
     "watch-ts": "tsc -w",
