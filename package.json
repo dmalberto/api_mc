@@ -5,10 +5,13 @@
   "main": "dist/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "tsc",
     "compile": "tsc -w -diagnostics",
     "start": "node ./dist/app.js",
     "lint": "eslint . --ext .ts,.js",
-    "format": "npx prettier 'src/**/*.ts' --write"
+    "format": "npx prettier 'src/**/*.ts' --write",
+    "watch-ts": "tsc -w",
+    "deploy": "git add . && git commit -m Heroku && git push heroku master"
   },
   "keywords": [],
   "author": "",
