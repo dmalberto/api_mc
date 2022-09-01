@@ -1,5 +1,5 @@
 import StartUp from './startUp';
-let port = '5000';
+let port = process.env.PORT || '5000';
 
 StartUp.app.listen(port, () => {
   console.log(`Rodando na porta ${port}`);
