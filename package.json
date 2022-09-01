@@ -5,7 +5,8 @@
   "main": "dist/app.js",
   "scripts": {
     "start": "node dist/app.js",
-    "postinstall": "tsc",
+    "postinstall": "npm run tsc",
+    "tsc": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1",
     "compile": "tsc -w -diagnostics",
     "lint": "eslint . --ext .ts,.js",
