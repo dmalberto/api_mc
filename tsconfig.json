@@ -3,11 +3,20 @@
     "target": "es6",
     "module": "commonjs",
     "esModuleInterop": true,
-    "typeRoots": ["../node_modules/@types"],
-    "types": ["node"],
+    "typeRoots": [
+      "../node_modules/@types"
+    ],
+    "types": [
+      "node"
+    ],
     "outDir": "dist",
     "incremental": true
   },
-  "include": ["src/**/*.ts", "src/*.ts"],
-  "exclude": ["node_modules"]
+  "include": [
+    "src/**/*.ts",
+    "src/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }

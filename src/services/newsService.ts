@@ -11,6 +11,7 @@ export class NewsService implements INewsService {
     const data = await NewsRepository.find({})
       .skip(page * qtd - qtd)
       .limit(qtd);
+
     return {
       Page: page,
       Qtd: qtd,

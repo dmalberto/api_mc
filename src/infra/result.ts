@@ -1,4 +1,4 @@
-type DataType = {
+export type DataType = {
   titulo: string;
   chapeu: string;
   texto: string;
@@ -14,5 +14,5 @@ export class Result {
   Qtd: number;
   Page: number;
   Total: number;
-  Data: DataType;
+  Data: DataType[];
 }
