@@ -8,7 +8,7 @@ class StartUp {
 
   constructor() {
     this.app = express();
-    // this._db.createConnection();
+    this._db.createConnection();
     routes(this.app);
   }
 }
